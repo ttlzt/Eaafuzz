@@ -2,7 +2,7 @@
 Eaafuzz is a kind of fuzzy testing of coverage rate. Through the energy-aware adaptive fuzzy testing method of sparse self-encoder, it is specially modeled for the “input key section” and optimizes the variation strategy to make the fuzzy testing more accurate and efficient.
 ## How to perform fuzzing with CIDFuzz
 1 Download Miniconda installation script
-`wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
+```wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh```
 2 Create a new virtual environment named keras-env
 `bash Miniconda3-latest-Linux-x86_64.sh`
 3 Install TensorFlow 2.12.0
