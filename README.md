@@ -6,13 +6,23 @@ Eaafuzz is a kind of fuzzy testing of coverage rate. Through the energy-aware ad
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 ```
 2 Create a new virtual environment named keras-env
-`bash Miniconda3-latest-Linux-x86_64.sh`
+```
+bash Miniconda3-latest-Linux-x86_64.sh
+```
 3 Install TensorFlow 2.12.0
-`pip install tensorflow==2.12.0 keras==2.12.0`
+```
+pip install tensorflow==2.12.0 keras==2.12.0
+```
 4 Use AFL to run for a period to generate the original seed training set Eaafuzz_in, and run Model training
-`python Model training.py`
+```
+python Model training.py
+```
 5 Run the Energy model to generate new seeds and energy models
-`python Energy model.py`
+```
+python Energy model.py
+```
 6 Fuzz testing
-`./Fuzzing -i splice_seeds -o seeds -l 8041 ./xmllint @@`
+```
+./Fuzzing -i splice_seeds -o seeds -l 8041 ./xmllint @@
+```
 
